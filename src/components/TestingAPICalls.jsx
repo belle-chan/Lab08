@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FetchData } from "../utils/Services";
+import { FetchData } from "../utils/services";
 
 const TestingAPICalls = () => {
   const [data, setData] = useState([]);
@@ -12,7 +12,7 @@ const TestingAPICalls = () => {
   return (
     <div>
       {data.map((item) => (
-        <div>{item.name}</div>
+        <li key={item.id}>{item.name}</li>
       ))}
     </div>
   );

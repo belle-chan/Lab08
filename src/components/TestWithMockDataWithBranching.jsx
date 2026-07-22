@@ -1,4 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
+
+TestWithMockDataWithBranching.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
+  displayUnorderedList: PropTypes.bool.isRequired,
+  handleClick: PropTypes.func.isRequired,
+};
 
 const TestWithMockDataWithBranching = ({
   data,

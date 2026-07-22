@@ -1,0 +1,267 @@
+{
+  "version": "2.1.0",
+  "$schema": "http://json.schemastore.org/sarif-2.1.0-rtm.5",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "ESLint",
+          "informationUri": "https://eslint.org",
+          "rules": [
+            {
+              "id": "testing-library/await-async-utils",
+              "helpUri": "https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/await-async-utils.md",
+              "properties": {},
+              "shortDescription": {
+                "text": "Enforce promises from async utils to be awaited properly"
+              }
+            },
+            {
+              "id": "testing-library/no-wait-for-side-effects",
+              "helpUri": "https://github.com/testing-library/eslint-plugin-testing-library/tree/main/docs/rules/no-wait-for-side-effects.md",
+              "properties": {},
+              "shortDescription": {
+                "text": "Disallow the use of side effects in `waitFor`"
+              }
+            }
+          ],
+          "version": "9.39.5"
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/eslint.config.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/App.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/App.test.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/__tests__/FirstTest.test.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/__tests__/TestWithMockData.test.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/__tests__/TestWithMockDataWithBranching.test.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/__tests__/TestingAPICalls.test.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/__tests__/TestingStateChange.test.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/components/FirstTest.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/components/TestWithMockData.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/components/TestWithMockDataWithBranching.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/components/TestingAPICalls.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/components/TestingStateChange.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/index.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/setupTests.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/utils/services.js"
+          }
+        }
+      ],
+      "results": [
+        {
+          "level": "error",
+          "message": {
+            "text": "Promise returned from `waitFor` must be handled"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/__tests__/TestingAPICalls.test.jsx",
+                  "index": 6
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 5,
+                  "endLine": 18,
+                  "endColumn": 12
+                }
+              }
+            }
+          ],
+          "ruleId": "testing-library/await-async-utils",
+          "ruleIndex": 0,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Avoid using side effects within `waitFor` callback"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/__tests__/TestingStateChange.test.jsx",
+                  "index": 7
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 7,
+                  "endLine": 17,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "ruleId": "testing-library/no-wait-for-side-effects",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Avoid using side effects within `waitFor` callback"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/__tests__/TestingStateChange.test.jsx",
+                  "index": 7
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 7,
+                  "endLine": 27,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "ruleId": "testing-library/no-wait-for-side-effects",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Avoid using side effects within `waitFor` callback"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/__tests__/TestingStateChange.test.jsx",
+                  "index": 7
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 7,
+                  "endLine": 39,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "ruleId": "testing-library/no-wait-for-side-effects",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Avoid using side effects within `waitFor` callback"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/SIT%20STUDY%20DOCUMENTS/Year%202/Trimester%203/ICT2116%20-%20Secure%20Software%20Development/Lab08/react-unit-testing/src/__tests__/TestingStateChange.test.jsx",
+                  "index": 7
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 7,
+                  "endLine": 51,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "ruleId": "testing-library/no-wait-for-side-effects",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,21 +1,22 @@
-import React from 'react'
+import PropTypes from "prop-types";
 
-const TestWithMockData = ({data}) => {
+function TestWithMockData({ data }) {
   return (
     <div>
-        <ul>
-            {data.map(item => (
-                <li key={item.id}>
-                    {item.id}
-                    {item.first_name},
-                    {item.last_name},
-                    {item.email}
-
-                </li>
-            ))}
-        </ul>
+      {data.map((item) => (
+        <div key={item.id}>{item.name}</div>
+      ))}
     </div>
-  )
+  );
 }
 
-export default TestWithMockData
+TestWithMockData.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+      name: PropTypes.string,
+    })
+  ).isRequired,
+};
+
+export default TestWithMockData;
