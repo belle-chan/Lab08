@@ -8,7 +8,7 @@ jobs:
     permissions:
       contents: read
       actions: read
-      security-events: write   # required so upload-sarif can publish to the Security tab
+      security-events: write  # required so upload-sarif can publish to the Security tab
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
