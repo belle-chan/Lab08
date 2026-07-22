@@ -3,6 +3,9 @@ import reactPlugin from "eslint-plugin-react";
 import jestPlugin from "eslint-plugin-jest";
 import testingLibraryPlugin from "eslint-plugin-testing-library";
 import babelParser from "@babel/eslint-parser";
+import pluginSecurity from "eslint-plugin-security";
+import securityNode from 'eslint-plugin-security-node';
+import eslintPluginNoUnsanitized from 'eslint-plugin-no-unsanitized';
 
 export default defineConfig([
   {
@@ -28,11 +31,17 @@ export default defineConfig([
 
     plugins: {
       react: reactPlugin,
+      security: pluginSecurity,
+      'security-node': securityNode,
+      'no-unsanitized': eslintPluginNoUnsanitized,
     },
 
     rules: {
       ...reactPlugin.configs.recommended.rules,
-      "react/react-in-jsx-scope": "off",
+      'react/react-in-jsx-scope': 'off',
+      'security/detect-eval-with-expression': 'error',
+      'security-node/detect-crlf': 'error',
+      ...eslintPluginNoUnsanitized.configs.recommended.rules,
     },
 
     settings: {
